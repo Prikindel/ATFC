@@ -1,4 +1,4 @@
-package view;
+package main.view;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;

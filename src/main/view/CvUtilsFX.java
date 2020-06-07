@@ -1,6 +1,5 @@
-package view;
+package main.view;
 
-import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.*;
@@ -10,8 +9,6 @@ import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
-
-import java.awt.image.BufferedImage;
 
 public class CvUtilsFX {
 

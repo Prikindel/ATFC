@@ -1,10 +1,11 @@
-package model;
+package main.model;
 
 /**
  *
  */
 
 public enum DataFiles {
+    NUMBER_CAR("number_car.jpg"),
     VIDEO("cars.mp4"),
     IMAGE_POLICE("1.jpg"),
     IMAGE_1("8.jpg"),
@@ -17,6 +18,6 @@ public enum DataFiles {
     }
 
     public String getPath() {
-        return "//dataFiles//" + this.path;
+        return "dataFiles//" + this.path;
     }
 }

@@ -1,4 +1,4 @@
-package model;
+package main.model;
 
 import org.opencv.core.Mat;
 import org.opencv.objdetect.CascadeClassifier;

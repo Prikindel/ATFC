@@ -1,8 +1,8 @@
-package present;
+package main.present;
 
+import main.view.CvUtils;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
-import view.CvUtils;
 
 public class Converion {
 
@@ -19,21 +19,32 @@ public class Converion {
     }
 
     /**
-     * Добавляет на копию исходной матрицы переданные прямоугольники.
+     * Добавляет на исходную матрицу переданные прямоугольники.
      *
      * @param img           Матрица изображения
      * @param rectangles    Матрица объектов Rect
      * @param color         Цвет отмечаемых объектов в формате Scalar
-     * @return              Изображение с отмеченными на ней прямоугольниками
      */
-    public static Mat addRectangleToMat(Mat img, MatOfRect rectangles, Scalar color) {
-        Mat imgCopy = img.clone();
+    public static void addRectangleToMat(Mat img, MatOfRect rectangles, Scalar color) {
         for (Rect r : rectangles.toList()) {
-            Imgproc.rectangle(imgCopy, new Point(r.x, r.y),
+            Imgproc.rectangle(img, new Point(r.x, r.y),
                     new Point(r.x + r.width, r.y + r.height),
                     color);
         }
-        return imgCopy;
+    }
+
+    public static void addNumberToCar(Mat img, Rect car, Rect number, String text) {
+        Mat num = img.submat(number);
+        img.put(car.x + car.width - number.width,
+                car.y + car.height - number.height / 2,
+                num.get(0,0));
+        Imgproc.putText(img,
+                text,
+                new Point(
+                        car.x + car.width - number.width,
+                        car.y + car.height + number.height / 2
+                ),
+                Imgproc.FONT_HERSHEY_COMPLEX, 2, CvUtils.COLOR_GREEN);
     }
 
 }

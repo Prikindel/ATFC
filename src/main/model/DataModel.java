@@ -1,4 +1,4 @@
-package model;
+package main.model;
 
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfInt;
@@ -10,7 +10,7 @@ import java.io.File;
 
 public class DataModel extends MainModel {
 
-    private static final String DIR_SAVEIMAGE = "//saveImage//";
+    private static final String DIR_SAVEIMAGE = "saveImage//";
 
     public static String getCascadePath(Cascade cascade) {
         return cascade.getPath();
@@ -58,7 +58,9 @@ public class DataModel extends MainModel {
             }
         }
 
-        name = DIR_SAVEIMAGE + name;
+        name = DIR_SAVEIMAGE + name + ".png";
+        System.out.println(name);
+        System.out.println(img.size());
         boolean st = Imgcodecs.imwrite(name, img,
                 new MatOfInt(Imgcodecs.IMWRITE_PNG_COMPRESSION, 0));
         if (!st) {

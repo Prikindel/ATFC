@@ -1,4 +1,4 @@
-package model;
+package main.model;
 
 /**
  *
@@ -13,6 +13,6 @@ public enum Cascade {
         this.path = path;
     }
     public String getPath() {
-        return "//haarCascades//" + this.path;
+        return "haarCascades//" + this.path;
     }
 }

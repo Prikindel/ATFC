@@ -16,16 +16,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62ee67d7-fea8-4e3e-9086-1d141ae3485d" name="Default Changelist" comment="Added classes to the display layer for working with images.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Cascade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/DataFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/present/Analysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/present/Converion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
+    <list default="true" id="62ee67d7-fea8-4e3e-9086-1d141ae3485d" name="Default Changelist" comment="Added present layer. Detector function.">
+      <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Activity/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591485713125</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed the format of the model layer.">
+      <created>1591489144198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591489144198</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added present layer. Detector function.">
+      <created>1591489196485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591489196485</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +149,9 @@
     <MESSAGE value="Create project and add opencv" />
     <MESSAGE value="Create model layer." />
     <MESSAGE value="Added classes to the display layer for working with images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes to the display layer for working with images." />
+    <MESSAGE value="Changed the format of the model layer." />
+    <MESSAGE value="Added present layer. Detector function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added present layer. Detector function." />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1591488260328">
@@ -178,10 +186,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591397261264" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1591485716657">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1591489198563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591485716657" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591489198563" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591485485971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

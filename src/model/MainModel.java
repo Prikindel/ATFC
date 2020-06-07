@@ -8,56 +8,30 @@ import org.opencv.videoio.VideoCapture;
  *
  */
 
-enum Cascade {
-    CAR("myhaar.xml"),
-    NUMBER_CAR("haarcascade_russian_plate_number.xml"),
-    FLOW("cars.xml");
-    private final String path;
-    Cascade(String path) {
-        this.path = path;
-    }
-    public String getPath() {
-        return "//haarCascades//" + this.path;
-    }
-}
+public abstract class MainModel {
 
-/**
- *
- */
-
-enum DataFiles {
-    VIDEO("cars.mp4"),
-    IMAGE_POLICE("1.jpg"),
-    IMAGE_1("8.jpg"),
-    IMAGE_2("17.jpg"),
-    IMAGE_3("18.jpg"),
-    IMAGE_4("21.jpg");
-    private final String path;
-    DataFiles(String path) {
-        this.path = path;
+    static String getCascadePath(Cascade cascade) {
+        return null;
     }
 
-    public String getPath() {
-        return "//dataFiles//" + this.path;
+    static CascadeClassifier getCascadeClassifier(Cascade cascade) {
+        return null;
     }
-}
 
-/**
- *
- */
+    static String getDataPath(DataFiles data) {
+        return null;
+    }
 
-public interface MainModel {
+    static Mat getDataMat(DataFiles data) {
+        return null;
+    }
 
-    String getCascadePath(Cascade cascade);
+    static VideoCapture getDataVideo(DataFiles data) {
+        return null;
+    }
 
-    CascadeClassifier getCascadeClassifier(Cascade cascade);
-
-    String getDataPath(DataFiles data);
-
-    Mat getDataMat(DataFiles data);
-
-    VideoCapture getDataVideo(DataFiles data);
-
-    boolean saveImage(Mat img, String name);
+    static boolean saveImage(Mat img, String name) {
+        return false;
+    }
 
 }

@@ -8,17 +8,15 @@ import org.opencv.videoio.VideoCapture;
 
 import java.io.File;
 
-public class Data implements MainModel {
+public class DataModel extends MainModel {
 
     private static final String DIR_SAVEIMAGE = "//saveImage//";
 
-    @Override
-    public String getCascadePath(Cascade cascade) {
+    public static String getCascadePath(Cascade cascade) {
         return cascade.getPath();
     }
 
-    @Override
-    public CascadeClassifier getCascadeClassifier(Cascade cascade) {
+    public static CascadeClassifier getCascadeClassifier(Cascade cascade) {
         CascadeClassifier cascadeClassifier = new CascadeClassifier(cascade.getPath());
 
         if (cascadeClassifier.empty()) {
@@ -28,13 +26,11 @@ public class Data implements MainModel {
         return cascadeClassifier;
     }
 
-    @Override
-    public String getDataPath(DataFiles data) {
+    public static String getDataPath(DataFiles data) {
         return data.getPath();
     }
 
-    @Override
-    public Mat getDataMat(DataFiles data) {
+    public static Mat getDataMat(DataFiles data) {
         Mat img = Imgcodecs.imread(data.getPath());
         if (img.empty()) {
             System.out.println("Не удалось загрузить изображение");
@@ -43,8 +39,7 @@ public class Data implements MainModel {
         return img;
     }
 
-    @Override
-    public VideoCapture getDataVideo(DataFiles data) {
+    public static VideoCapture getDataVideo(DataFiles data) {
         VideoCapture video = new VideoCapture();
         video.open(data.getPath());
         if (!video.isOpened()) {
@@ -54,8 +49,7 @@ public class Data implements MainModel {
         return video;
     }
 
-    @Override
-    public boolean saveImage(Mat img, String name) {
+    public static boolean saveImage(Mat img, String name) {
         final File dir = new File(DIR_SAVEIMAGE);
 
         if(!dir.exists()) {

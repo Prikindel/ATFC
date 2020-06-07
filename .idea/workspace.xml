@@ -16,10 +16,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62ee67d7-fea8-4e3e-9086-1d141ae3485d" name="Default Changelist" comment="Create model layer.">
-      <change afterPath="$PROJECT_DIR$/src/view/CvUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/CvUtilsFX.java" afterDir="false" />
+    <list default="true" id="62ee67d7-fea8-4e3e-9086-1d141ae3485d" name="Default Changelist" comment="Added classes to the display layer for working with images.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Cascade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/DataFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/present/Analysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/present/Converion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/view" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -99,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591484139219</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added classes to the display layer for working with images.">
+      <created>1591485713125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591485713125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,9 +142,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project and add opencv" />
     <MESSAGE value="Create model layer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create model layer." />
+    <MESSAGE value="Added classes to the display layer for working with images." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added classes to the display layer for working with images." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1591488260328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1591488260328" />
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1591455710472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -139,6 +158,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591396171167" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1591486070679">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591486070679" />
     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1591399555744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -155,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591397261264" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1591484143123">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1591485716657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591484143123" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591485716657" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591485485971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
